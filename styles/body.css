@@ -1,0 +1,27 @@
+.body {
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 18px 46px 0;
+    font-family: "Rubik";
+    position: relative;
+}
+
+.body__circle-one {
+    position: fixed;
+    width: 554px;
+    height: 509px;
+    left: -336px;
+    top: 10%;
+    background: rgba(253, 212, 70, 0.5);
+    filter: blur(137.129px);
+}
+
+.body__circle-two {
+    position: fixed;
+    width: 798px;
+    height: 733px;
+    right: -524px;
+    top: 80%;
+    background: rgba(253, 212, 70, 0.5);
+    filter: blur(197.442px);
+}
