@@ -97,3 +97,64 @@
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px 50px 0 rgba(253, 212, 70, 0.8);
 }
+
+.header__menu {
+    display: none;
+}
+
+@media screen and (max-width: 1240px) {
+    .header__logo {
+        width: 128px;
+        height: 59px;
+        margin-right: 12px;
+    }
+
+    .header__search-icon {
+        top: 11px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .header__search-input {
+        height: 40px;
+        padding: 8px 10px 8px 44px;
+    }
+
+    .header__login-btn, .header__registr-btn {
+        border: 1.5px solid #FDD446;
+        border-radius: 20px;
+        font-size: 18px;
+        line-height: 24px;
+        width: 140px;
+        height: 40px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .header__container:last-of-type {
+        display: none;
+    }
+
+    .header__logo {
+        width: 136px;
+        height: 65px;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .header__menu {
+        display: block;
+        width: 30px;
+        height: 12px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .header__menu:hover {
+        cursor: pointer;
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+    }
+}

@@ -25,3 +25,28 @@
     background: rgba(253, 212, 70, 0.5);
     filter: blur(197.442px);
 }
+
+@media screen and (max-width: 1240px) {
+    .body {
+        max-width: 1240px;
+        padding: 18px 30px 0;
+    }
+
+    .body__circle-one {
+        width: 364.62px;
+        height: 335px;
+        top: 10%;
+        left: -235px;
+        background: rgba(253, 212, 70, 0.5);
+        filter: blur(137.129px);
+    }
+    
+    .body__circle-two {
+        width: 554px;
+        height: 509px;
+        top: 80%;
+        right: -250px;
+        background: rgba(253, 212, 70, 0.5);
+        filter: blur(137.129px);
+    }
+}
