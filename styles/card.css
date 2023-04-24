@@ -1,0 +1,273 @@
+.card {
+    border: 1px solid rgba(48, 47, 46, 0.7);
+    padding: 12px 12px 19px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__photo {
+    width: 100%;
+}
+
+.card__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2.5;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 11px;
+}
+
+.card__mini-photo {
+    width: 70px;
+    height: 70px;
+    margin-right: 8px;
+}
+
+.card__name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.card__check-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.card__check {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.56;
+    color: #FF9900;
+    margin-right: 6px;
+}
+
+.card__check-img {
+    width: 20px;
+    height: 20px;
+}
+
+.card__feature {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.card__feature_last {
+    margin-bottom: 0;
+}
+
+.card__feature-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.card__rare {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.38;
+    padding: 0 20px;
+    position: relative;
+}
+
+.card__rare::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background: linear-gradient(90deg, #FFC107, #EC851A) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.card__price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.38;
+    padding: 0 20px;
+    background-color: #FDD446;
+    border-radius: 10px;
+}
+
+.card__btn {
+    width: 90%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    background: linear-gradient(90deg, #FDD446 0%, #F79B47 100%);
+    border-radius: 20px;
+    padding: 9px;
+    margin: 13px auto 0;
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width: 1240px) {
+    .card {
+        padding: 8px 8px 13px;
+    }
+
+    .card__title {
+        font-size: 14px;
+        line-height: 2.47;
+    }
+
+    .card__info {
+        margin-bottom: 8px;
+    }
+
+    .card__mini-photo {
+        width: 48px;
+        height: 48px;
+        margin-right: 6px;
+    }
+
+    .card__name {
+        font-size: 14px;
+        line-height: 1.24;
+    }
+
+    .card__check {
+        font-size: 11px;
+        line-height: 1.57;
+    }
+    
+    .card__check-img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .card__feature {
+        margin-bottom: 6px;
+    }
+    
+    .card__feature_last {
+        margin-bottom: 0;
+    }
+
+    .card__feature-text {
+        font-size: 14px;
+        line-height: 1.78;
+    }
+
+    .card__rare {
+        font-size: 11px;
+        padding: 0 14px;
+    }
+    
+    .card__rare::before {
+        border-radius: 7px;
+        border: 1px solid transparent;
+    }
+
+    .card__price {
+        font-size: 11px;
+        padding: 0 15px;
+        border-radius: 7px;
+    }
+    
+    .card__btn {
+        font-size: 17px;
+        line-height: 1.47;
+        border-radius: 15px;
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .card {
+        padding: 5px 5px 8px;
+    }
+
+    .card__title {
+        font-size: 9px;
+    }
+
+    .card__info {
+        margin-bottom: 5px;
+    }
+
+    .card__mini-photo {
+        width: 30px;
+        height: 30px;
+        margin-right: 4px;
+    }
+
+    .card__name {
+        font-size: 11px;
+        line-height: 1.21;
+    }
+
+    .card__check {
+        font-size: 7px;
+        margin-right: 2px;
+    }
+
+    .card__check-img {
+        width: 9px;
+        height: 9px;
+    }
+
+    .card__feature {
+        margin-bottom: 4px;
+    }
+
+    .card__feature_last {
+        margin-bottom: 0;
+    }
+
+    .card__feature-text {
+        font-size: 9px;
+        line-height: 1.74;
+    }
+
+    .card__rare {
+        font-size: 7px;
+        padding: 0 8px;
+    }
+    
+    .card__rare::before {
+        border-radius: 4px;
+    }
+
+    .card__price {
+        font-size: 7px;
+        padding: 0 9px;
+        border-radius: 4px;
+    }
+    
+    .card__btn {
+        font-size: 10px;
+        line-height: 1.57;
+        border-radius: 8px;
+        padding: 4px;
+        margin-top: 5px;
+    }
+}
