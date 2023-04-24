@@ -11,9 +11,9 @@
     <header class="header">
         <div class="header__container">
             <img class="header__logo" src="./images/logo.svg" alt="логоитип.">
-            <div class="header__search">
-                <img class="header__search-icon" src="./images/searchIcon.svg" alt="иконка поиска.">
-                <input class="header__search-input" type="text" placeholder="Поиск...">
+            <div class="search-input">
+                <img class="search-input__icon" src="./images/searchIcon.svg" alt="иконка поиска.">
+                <input class="search-input__input" type="text" placeholder="Поиск...">
             </div>
         </div>
         <div class="header__container">
@@ -22,6 +22,40 @@
         </div>
         <img class="header__menu" src="./images/menu.svg" alt="меню.">
     </header>
+
+    <main>
+        <section class="search">
+            <button class="search__btn search__btn_filters" type="button">
+                <p class="search__btn-text">Фильтры</p>
+                <img class="search__btn-arrow-full" src="./images/fullArrowDown.svg" alt="стрелка вниз.">
+            </button>
+            <div class="search-input search-input_filteres">
+                <img class="search-input__icon" src="./images/searchIcon.svg" alt="иконка поиска.">
+                <input class="search-input__input" type="text" placeholder="Поиск...">
+            </div>
+            <button class="search__btn search__btn_sort" type="button">
+                <p class="search__btn-text">По умолчанию</p>
+                <img class="search__btn-arrow" src="./images/arrowDown.svg" alt="стрелка вниз.">
+            </button>
+        </section>
+
+        <section class="search_mobile">
+            <div class="search-input search-input_filteres">
+                <img class="search-input__icon" src="./images/searchIcon.svg" alt="иконка поиска.">
+                <input class="search-input__input" type="text" placeholder="Поиск...">
+            </div>
+            <div class="search__btns">
+                <button class="search__btn search__btn_filters" type="button">
+                    <p class="search__btn-text">Фильтры</p>
+                    <img class="search__btn-arrow-full" src="./images/fullArrowDown.svg" alt="стрелка вниз.">
+                </button>
+                <button class="search__btn search__btn_sort" type="button">
+                    <p class="search__btn-text">По умолчанию</p>
+                    <img class="search__btn-arrow" src="./images/arrowDown.svg" alt="стрелка вниз.">
+                </button>
+            </div>
+        </section>
+    </main>
 
     <div class="body__circle-one"></div>
     <div class="body__circle-two"></div>

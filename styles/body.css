@@ -14,6 +14,7 @@
     top: 10%;
     background: rgba(253, 212, 70, 0.5);
     filter: blur(137.129px);
+    z-index: -10;
 }
 
 .body__circle-two {
@@ -24,6 +25,7 @@
     top: 80%;
     background: rgba(253, 212, 70, 0.5);
     filter: blur(197.442px);
+    z-index: -10;
 }
 
 @media screen and (max-width: 1240px) {
@@ -48,5 +50,29 @@
         right: -250px;
         background: rgba(253, 212, 70, 0.5);
         filter: blur(137.129px);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .body {
+        max-width: 768px;
+        padding: 10px 16px 0;
+    }
+
+    .body__circle-one {
+        width: 153.92px;
+        height: 141.35px;
+        top: 10%;
+        left: -43px;
+        filter: blur(38.0988px);
+    }
+    
+    .body__circle-two {
+        width: 221.62px;
+        height: 203.53px;
+        top: 80%;
+        left: 204px;
+        filter: blur(54.8558px);
+        background: rgba(253, 212, 70, 0.5);
     }
 }
