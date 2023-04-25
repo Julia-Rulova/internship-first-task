@@ -29,6 +29,124 @@
                 <p class="search__btn-text">Фильтры</p>
                 <img class="search__btn-arrow-full" src="./images/fullArrowDown.svg" alt="стрелка вниз.">
             </button>
+
+            <article class="popup-filters popup-filters_open">
+                <form class="popup-filters__form">
+                    <div class="popup-filters__container">
+                        <div class="popup-filters__title-container">
+                            <p class="popup-filters__title">Цена</p>
+                            <div class="popup-filters__minus"></div>
+                        </div>
+                        <input type="range">
+                    </div>
+                    <div class="popup-filters__container">
+                        <div class="popup-filters__title-container">
+                            <p class="popup-filters__title">Категории</p>
+                            <div class="popup-filters__minus"></div>
+                        </div>
+                        <ul class="popup-filters__list">
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="premium">
+                                <label class="popup-filters__item-text" for="premium">Премиум</label>
+                            </li>
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="art">
+                                <label class="popup-filters__item-text" for="art">Искусство</label>
+                            </li>
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="celebrities">
+                                <label class="popup-filters__item-text" for="celebrities">Знаменитости</label>
+                            </li>
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="cybersport">
+                                <label class="popup-filters__item-text" for="cybersport">Киберспорт</label>
+                            </li>
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="charity">
+                                <label class="popup-filters__item-text" for="charity">Благотворительность</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-filters__container">
+                        <div class="popup-filters__title-container">
+                            <p class="popup-filters__title">Типы файлов</p>
+                            <div class="popup-filters__minus"></div>
+                        </div>
+                        <ul class="popup-filters__list">
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="images">
+                                <label class="popup-filters__item-text" for="images">Изображения</label>
+                            </li>
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="videos">
+                                <label class="popup-filters__item-text" for="videos">Видео</label>
+                            </li>
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="audio">
+                                <label class="popup-filters__item-text" for="audio">Аудио</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-filters__container">
+                        <div class="popup-filters__title-container">
+                            <p class="popup-filters__title">Типы продаж</p>
+                            <div class="popup-filters__minus"></div>
+                        </div>
+                        <ul class="popup-filters__list">
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="fixed-cost">
+                                <label class="popup-filters__item-text" for="fixed-cost">Фикс. цена</label>
+                            </li>
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="auction">
+                                <label class="popup-filters__item-text" for="auction">Аукцион активен</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-filters__container">
+                        <div class="popup-filters__title-container">
+                            <p class="popup-filters__title">Сеть NFT</p>
+                            <div class="popup-filters__minus"></div>
+                        </div>
+                        <ul class="popup-filters__list">
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="eth">
+                                <label class="popup-filters__item-text" for="eth">ETH</label>
+                            </li>
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="bnb">
+                                <label class="popup-filters__item-text" for="bnb">BNB</label>
+                            </li>
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="usdc">
+                                <label class="popup-filters__item-text" for="usdc">USDC</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-filters__container">
+                        <div class="popup-filters__title-container">
+                            <p class="popup-filters__title">Редкость</p>
+                            <div class="popup-filters__minus"></div>
+                        </div>
+                        <ul class="popup-filters__list">
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="unique">
+                                <label class="popup-filters__item-text" for="unique">Уникальная</label>
+                            </li>
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="rare">
+                                <label class="popup-filters__item-text" for="rare">Редкая</label>
+                            </li>
+                            <li class="popup-filters__item">
+                                <input class="popup-filters__checkbox" type="checkbox" id="epic">
+                                <label class="popup-filters__item-text" for="epic">Эпическая</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="popup-filters__submit-btn" type="submit">Применить</button>
+                </form>
+            </article>
+
             <div class="search-input search-input_filteres">
                 <img class="search-input__icon" src="./images/searchIcon.svg" alt="иконка поиска.">
                 <input class="search-input__input" type="text" placeholder="Поиск...">
@@ -78,7 +196,124 @@
                     <p class="search__btn-text search__btn-text_mobile">По умолчанию</p>
                     <img class="search__btn-arrow" src="./images/arrowDown.svg" alt="стрелка вниз.">
                 </button>
-                
+
+                <article class="popup-filters popup-filters_open">
+                    <form class="popup-filters__form">
+                        <div class="popup-filters__container">
+                            <div class="popup-filters__title-container">
+                                <p class="popup-filters__title">Цена</p>
+                                <div class="popup-filters__minus"></div>
+                            </div>
+                            <input type="range">
+                        </div>
+                        <div class="popup-filters__container">
+                            <div class="popup-filters__title-container">
+                                <p class="popup-filters__title">Категории</p>
+                                <div class="popup-filters__minus"></div>
+                            </div>
+                            <ul class="popup-filters__list">
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="premium">
+                                    <label class="popup-filters__item-text" for="premium">Премиум</label>
+                                </li>
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="art">
+                                    <label class="popup-filters__item-text" for="art">Искусство</label>
+                                </li>
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="celebrities">
+                                    <label class="popup-filters__item-text" for="celebrities">Знаменитости</label>
+                                </li>
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="cybersport">
+                                    <label class="popup-filters__item-text" for="cybersport">Киберспорт</label>
+                                </li>
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="charity">
+                                    <label class="popup-filters__item-text" for="charity">Благотворительность</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="popup-filters__container">
+                            <div class="popup-filters__title-container">
+                                <p class="popup-filters__title">Типы файлов</p>
+                                <div class="popup-filters__minus"></div>
+                            </div>
+                            <ul class="popup-filters__list">
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="images">
+                                    <label class="popup-filters__item-text" for="images">Изображения</label>
+                                </li>
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="videos">
+                                    <label class="popup-filters__item-text" for="videos">Видео</label>
+                                </li>
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="audio">
+                                    <label class="popup-filters__item-text" for="audio">Аудио</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="popup-filters__container">
+                            <div class="popup-filters__title-container">
+                                <p class="popup-filters__title">Типы продаж</p>
+                                <div class="popup-filters__minus"></div>
+                            </div>
+                            <ul class="popup-filters__list">
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="fixed-cost">
+                                    <label class="popup-filters__item-text" for="fixed-cost">Фикс. цена</label>
+                                </li>
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="auction">
+                                    <label class="popup-filters__item-text" for="auction">Аукцион активен</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="popup-filters__container">
+                            <div class="popup-filters__title-container">
+                                <p class="popup-filters__title">Сеть NFT</p>
+                                <div class="popup-filters__minus"></div>
+                            </div>
+                            <ul class="popup-filters__list">
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="eth">
+                                    <label class="popup-filters__item-text" for="eth">ETH</label>
+                                </li>
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="bnb">
+                                    <label class="popup-filters__item-text" for="bnb">BNB</label>
+                                </li>
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="usdc">
+                                    <label class="popup-filters__item-text" for="usdc">USDC</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="popup-filters__container">
+                            <div class="popup-filters__title-container">
+                                <p class="popup-filters__title">Редкость</p>
+                                <div class="popup-filters__minus"></div>
+                            </div>
+                            <ul class="popup-filters__list">
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="unique">
+                                    <label class="popup-filters__item-text" for="unique">Уникальная</label>
+                                </li>
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="rare">
+                                    <label class="popup-filters__item-text" for="rare">Редкая</label>
+                                </li>
+                                <li class="popup-filters__item">
+                                    <input class="popup-filters__checkbox" type="checkbox" id="epic">
+                                    <label class="popup-filters__item-text" for="epic">Эпическая</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="popup-filters__submit-btn" type="submit">Применить</button>
+                    </form>
+                </article>
+
                 <article class="popup-sort popup-sort_mobile">
                     <ul class="popup-sort__container">
                         <li class="popup-sort__item">

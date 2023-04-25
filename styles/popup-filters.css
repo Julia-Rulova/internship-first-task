@@ -1,0 +1,179 @@
+.popup-filters {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 346px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px 16px 29px;
+    z-index: 3;
+}
+
+.popup-filters_open {
+    display: flex;
+}
+
+.popup-filters__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-filters__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.popup-filters__container:first-of-type {
+    margin-bottom: 38px;
+}
+
+.popup-filters__container:last-of-type {
+    margin-bottom: 0;
+}
+
+.popup-filters__title-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.popup-filters__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.popup-filters__minus {
+    width: 15px;
+    height: 0px;
+    border: 2px solid #FDD446;
+    cursor: pointer;
+}
+
+.popup-filters__list {
+    list-style-type: none;
+}
+
+.popup-filters__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.popup-filters__checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    appearance: none;
+    position: relative;
+}
+
+.popup-filters__checkbox:checked::after {
+    content: "";
+    background-image: url("../images/filterCheck.svg");
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+}
+
+.popup-filters__item-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.38;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.popup-filters__checkbox:checked + .popup-filters__item-text {
+    color: #000000;
+}
+
+.popup-filters__submit-btn {
+    width: 77%;
+    margin-top: 98px;
+    padding: 9px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    background-color: #FDD446;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 740px) {
+    .popup-filters {
+        top: 39px;
+        left: -1px;
+        width: calc(100% + 2px);
+        border-radius: 8px;
+        padding: 17px 13px 29px;
+    }
+
+    .popup-filters__container {
+        margin-bottom: 40px;
+    }
+    
+    .popup-filters__container:first-of-type {
+        margin-bottom: 31px;
+    }
+    
+    .popup-filters__container:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .popup-filters__title-container {
+        margin-bottom: 12px;
+    }
+
+    .popup-filters__title {
+        font-size: 20px;
+    }
+
+    .popup-filters__minus {
+        width: 13px;
+        border: 1.5px solid #FDD446;
+    }
+
+    .popup-filters__checkbox {
+        width: 17px;
+        height: 17px;
+        margin-right: 6px;
+    }
+    
+    .popup-filters__checkbox:checked::after {
+        top: 1px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .popup-filters__item-text {
+        font-size: 13px;
+        line-height: 2.43;
+    }
+
+    .popup-filters__submit-btn {
+        margin-top: 76px;
+        padding: 7px 0;
+        font-size: 20px;
+    }
+}
