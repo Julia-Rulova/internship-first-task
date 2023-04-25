@@ -38,6 +38,9 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .search__btn-arrow-full {
@@ -96,6 +99,7 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: 15px;
+        position: relative;
     }
 
     .search__btn_filters {

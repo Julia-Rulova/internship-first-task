@@ -38,6 +38,7 @@ popupSort.addEventListener("click", (evt) => {
 
 popupSortMobile.addEventListener("click", (evt) => {
     putCheck();
+    popupSortMobile.classList.remove("popup-sort_open");
     btnSortTextMobile.textContent = evt.target.textContent;
     btnSortText.textContent = btnSortTextMobile.textContent;
 });
