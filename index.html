@@ -34,8 +34,33 @@
                 <input class="search-input__input" type="text" placeholder="Поиск...">
             </div>
             <button class="search__btn search__btn_sort" type="button">
-                <p class="search__btn-text">По умолчанию</p>
+                <p class="search__btn-text search__btn-text_sort">По умолчанию</p>
                 <img class="search__btn-arrow" src="./images/arrowDown.svg" alt="стрелка вниз.">
+
+                <article class="popup-sort">
+                    <ul class="popup-sort__container">
+                        <li class="popup-sort__item">
+                            <img class="popup-sort__check" src="./images/filterCheck.svg" alt="галочка.">
+                            <p class="popup-sort__text">По умолчанию</p>
+                        </li>
+                        <li class="popup-sort__item">
+                            <img class="popup-sort__check" src="./images/filterCheck.svg" alt="галочка.">
+                            <p class="popup-sort__text">По дате</p>
+                        </li>
+                        <li class="popup-sort__item">
+                            <img class="popup-sort__check" src="./images/filterCheck.svg" alt="галочка.">
+                            <p class="popup-sort__text">Дешевле</p>
+                        </li>
+                        <li class="popup-sort__item">
+                            <img class="popup-sort__check" src="./images/filterCheck.svg" alt="галочка.">
+                            <p class="popup-sort__text">Дороже</p>
+                        </li>
+                        <li class="popup-sort__item">
+                            <img class="popup-sort__check" src="./images/filterCheck.svg" alt="галочка.">
+                            <p class="popup-sort__text">По популярности</p>
+                        </li>
+                    </ul>
+                </article>
             </button>
         </section>
 
@@ -49,9 +74,34 @@
                     <p class="search__btn-text">Фильтры</p>
                     <img class="search__btn-arrow-full" src="./images/fullArrowDown.svg" alt="стрелка вниз.">
                 </button>
-                <button class="search__btn search__btn_sort" type="button">
-                    <p class="search__btn-text">По умолчанию</p>
+                <button class="search__btn search__btn_sort search__btn_sort-mobile" type="button">
+                    <p class="search__btn-text search__btn-text_mobile">По умолчанию</p>
                     <img class="search__btn-arrow" src="./images/arrowDown.svg" alt="стрелка вниз.">
+
+                    <article class="popup-sort popup-sort_mobile">
+                        <ul class="popup-sort__container">
+                            <li class="popup-sort__item">
+                                <img class="popup-sort__check" src="./images/filterCheck.svg" alt="галочка.">
+                                <p class="popup-sort__text">По умолчанию</p>
+                            </li>
+                            <li class="popup-sort__item">
+                                <img class="popup-sort__check" src="./images/filterCheck.svg" alt="галочка.">
+                                <p class="popup-sort__text">По дате</p>
+                            </li>
+                            <li class="popup-sort__item">
+                                <img class="popup-sort__check" src="./images/filterCheck.svg" alt="галочка.">
+                                <p class="popup-sort__text">Дешевле</p>
+                            </li>
+                            <li class="popup-sort__item">
+                                <img class="popup-sort__check" src="./images/filterCheck.svg" alt="галочка.">
+                                <p class="popup-sort__text">Дороже</p>
+                            </li>
+                            <li class="popup-sort__item">
+                                <img class="popup-sort__check" src="./images/filterCheck.svg" alt="галочка.">
+                                <p class="popup-sort__text">По популярности</p>
+                            </li>
+                        </ul>
+                    </article>
                 </button>
             </div>
         </section>
@@ -341,5 +391,7 @@
 
     <div class="body__circle-one"></div>
     <div class="body__circle-two"></div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
