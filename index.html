@@ -37,7 +37,22 @@
                             <p class="popup-filters__title">Цена</p>
                             <div class="popup-filters__minus"></div>
                         </div>
-                        <input type="range">
+                        <div class="popup-filters__range-container">
+                            <div class="popup-filters__range-track"></div>
+                            <input class="popup-filters__input-range popup-filters__input-range_min" type="range" min="500" max="1000000" step="1" value="500">
+                            <input class="popup-filters__input-range popup-filters__input-range_max" type="range" min="500" max="1000000" step="1" value="1000000">
+                        </div>
+                        <div class="popup-filters__inputs-container">
+                            <div class="popup-filters__input-container">
+                                <input class="popup-filters__price-input popup-filters__price-input_min" type="number" value="500">
+                                <p class="popup-filters__input-ruble">₽</p>
+                            </div>
+                            <div class="popup-filters__price-line"></div>
+                            <div class="popup-filters__input-container">
+                                <input class="popup-filters__price-input popup-filters__price-input_max" type="number" value="1000000">
+                                <p class="popup-filters__input-ruble">₽</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="popup-filters__container">
                         <div class="popup-filters__title-container">
@@ -204,7 +219,22 @@
                                 <p class="popup-filters__title">Цена</p>
                                 <div class="popup-filters__minus"></div>
                             </div>
-                            <input type="range">
+                            <div class="popup-filters__range-container">
+                                <div class="popup-filters__range-track popup-filters__range-track_mobile"></div>
+                                <input class="popup-filters__input-range popup-filters__input-range_min popup-filters__input-range_min-mobile" type="range" min="500" max="1000000" step="1" value="500">
+                                <input class="popup-filters__input-range popup-filters__input-range_max popup-filters__input-range_max-mobile" type="range" min="500" max="1000000" step="1" value="1000000">
+                            </div>
+                            <div class="popup-filters__inputs-container">
+                                <div class="popup-filters__input-container">
+                                    <input class="popup-filters__price-input popup-filters__price-input_min popup-filters__price-input_min-mobile" type="number" value="500">
+                                    <p class="popup-filters__input-ruble">₽</p>
+                                </div>
+                                <div class="popup-filters__price-line"></div>
+                                <div class="popup-filters__input-container">
+                                    <input class="popup-filters__price-input popup-filters__price-input_max popup-filters__price-input_max-mobile" type="number" value="1000000">
+                                    <p class="popup-filters__input-ruble">₽</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="popup-filters__container">
                             <div class="popup-filters__title-container">

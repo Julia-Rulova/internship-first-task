@@ -47,6 +47,10 @@
     margin-bottom: 16px;
 }
 
+.popup-filters__title-container {
+    margin-bottom: 24px;
+}
+
 .popup-filters__title {
     font-style: normal;
     font-weight: 400;
@@ -120,6 +124,146 @@
     cursor: pointer;
 }
 
+.popup-filters__range-container {
+    width: 100%;
+    position: relative;
+}
+
+.popup-filters__range-track {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(#FDD446, #FDD446);
+}
+
+.popup-filters__input-range::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 2px;
+}
+
+.popup-filters__input-range::-moz-range-track {
+    -moz-appearance: none;
+    height: 2px;
+}
+
+.popup-filters__input-range::-ms-track {
+    appearance: none;
+    height: 2px;
+}
+
+.popup-filters__input-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #FDD446;
+    cursor: pointer;
+    margin-top: -9px;
+    pointer-events: auto;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.popup-filters__input-range::-moz-range-thumb {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    background-color: #FDD446;
+    pointer-events: auto;
+    border: none;
+}
+
+.popup-filters__input-range::-ms-thumb {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    background-color: #FDD446;
+    pointer-events: auto;
+}
+
+.popup-filters__input-range_max::-webkit-slider-thumb {
+    transform: rotate(180deg);
+}
+
+.popup-filters__input-range_max::-moz-range-thumb {
+    transform: rotate(180deg);
+}
+
+.popup-filters__input-range_max::-ms-thumb {
+    transform: rotate(180deg);
+}
+
+.popup-filters__input-range {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.popup-filters__inputs-container {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-filters__input-container {
+    width: 29%;
+    position: relative;
+}
+
+.popup-filters__price-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.38;
+    color: rgba(0, 0, 0, 0.6);
+    padding-right: 15px;
+}
+
+.popup-filters__input-ruble {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.38;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-filters__price-input:focus-visible {
+    outline: none;
+}
+
+.popup-filters__price-line {
+    width: 9%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 @media screen and (max-width: 740px) {
     .popup-filters {
         top: 39px;
@@ -175,5 +319,55 @@
         margin-top: 76px;
         padding: 7px 0;
         font-size: 20px;
+    }
+
+    .popup-filters__title-container {
+        margin-bottom: 20px;
+    }
+    
+    .popup-filters__range-track {
+        height: 1px;
+    }
+    
+    .popup-filters__input-range::-webkit-slider-runnable-track {
+        height: 1px;
+    }
+    
+    .popup-filters__input-range::-moz-range-track {
+        height: 1px;
+    }
+    
+    .popup-filters__input-range::-ms-track {
+        height: 1px;
+    }
+    
+    .popup-filters__input-range::-webkit-slider-thumb {
+        height: 17px;
+        width: 17px;
+        margin-top: -8px;
+    }
+    
+    .popup-filters__input-range::-moz-range-thumb {
+        height: 17px;
+        width: 17px;
+    }
+    
+    .popup-filters__input-range::-ms-thumb {
+        height: 17px;
+        width: 17px;
+    }
+    
+    .popup-filters__inputs-container {
+        margin-top: 15px;
+    }
+    
+    .popup-filters__price-input {
+        font-size: 13px;
+        line-height: 2.43;
+    }
+    
+    .popup-filters__input-ruble {
+        font-size: 13px;
+        line-height: 2.43;
     }
 }
